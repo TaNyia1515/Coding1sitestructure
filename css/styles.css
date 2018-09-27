@@ -5,3 +5,20 @@ body {
 .jumbotron {
   background-color: blue;
 }
+
+.logo {
+  width: 125px;
+  height: 50px;
+}
+
+.navbar {
+  display:flex;
+}
+
+.navbar li {
+  display: inline;
+  font-size: 35px;
+  margin-left:50px;
+  padding-left: 45px;
+
+}
