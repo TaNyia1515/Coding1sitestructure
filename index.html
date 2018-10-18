@@ -3,19 +3,8 @@
 <html lang="en">
 
 <head>
-    <title>Nefra</title>
-
-    <title>Nefra</title>
-
-    <link href="./css/bootstrap.css" rel="stylesheet">
-
-    <link href="./css/styles.css" rel="stylesheet">
-    <link url="(./kingdom appearance.png)">
-
   <title>Nefra</title>
-
   <link href="./css/bootstrap.css" rel="stylesheet">
-
   <link href="./css/styles.css" rel="stylesheet">
   <link url="(./kingdom appearance.png)">
 </head>
@@ -24,99 +13,89 @@
   <div class="logo">
     <a href="./index.html"><img src="images/logo.png" alt="Kingdom Appearance"></a>
   </div>
-
-    <div class="navbar">
-      <a href="./Makeuplookbook.html">
-        Makeup Lookbook
-      </a>
-      <a href="./About.html">
-        About
-      </a>
-      <a href="./Services.html">
-        Services
-      </a>
-      <a href="./Booking.html">
-        Booking
-      </a>
-      <a href="./Shop.html">
-        Shop
-      </a>
-</div>
-<!--
-<div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="./eyes.html">Eyes</a>
-    <a href="./lips.html">Lips</a>
-    <a href="./eyebrows.html">Eyebrows</a>
-  </div>
-</div> -->
-
-<!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 6</div>
-    <img src="images/bluewoman.jpg" height="550" width:"100%">
+  <div class="navbar">
+    <a href="./Makeuplookbook.html">
+      Makeup Lookbook
+    </a>
+    <a href="./About.html">
+      About
+    </a>
+    <a href="./Services.html">
+      Services
+    </a>
+    <a href="./Booking.html">
+      Booking
+    </a>
+    <a href="./Shop.html">Shop</a>
   </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 6</div>
-    <img src="images/bluedress.jpg" height="550" width="100%">
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="images/bluewoman.jpg" height="550" width:"100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="images/bluedress.jpg" height="550" width="100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="images/collage.jpg" height="550" width:"100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="images/cigi.jpg" height="550" width:"100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="images/curlers.jpg" height="550" width:"100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 6</div>
+      <img src="images/collage2.jpg" height="550" width:"100%">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
+  <br>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 6</div>
-    <img src="images/collage.jpg" height="550" width:"100%">
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 6</div>
-    <img src="images/cigi.jpg" height="550" width:"100%">
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">5 / 6</div>
-    <img src="images/curlers.jpg" height="550" width:"100%">
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">6 / 6</div>
-    <img src="images/collage2.jpg" height="550" width:"100%">
-  </div>
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
     <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-</div>
-<script>
-var slideIndex = 0;
-showSlides();
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3750); // Change image every 3.75 seconds
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 3750); // Change image every 3.75 seconds
-}
-</script>
+  </script>
 </body>
 -
 
