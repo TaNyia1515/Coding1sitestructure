@@ -126,11 +126,11 @@ body {
 
 .responsiveCal iframe {
   position: absolute;
-  top: 5vw;
+  top: 3vw;
   left: 10vw;
   width: 75vw;
-  height: 55vw;
-  bottom: 75vw;
+  height: 50vw;
+  bottom: 55vw;
 }
 
 .dropdown {
