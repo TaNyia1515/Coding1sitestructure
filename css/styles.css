@@ -182,3 +182,13 @@ body {
   cursor: pointer;
   transform: translateY(4px);
 }
+
+.about {
+  width:325px;
+  height:325px;
+  float: right;
+}
+.aboutp {
+  padding-top: 85px;
+  margin-left: 81px;
+}
