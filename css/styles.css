@@ -34,7 +34,6 @@ body {
   box-sizing: border-box
 }
 
-
 .slideshow-container {
   max-width: 1000px;
   position: relative;
@@ -135,16 +134,16 @@ body {
 }
 
 .dropdown {
-    margin: 30px 20px 30px 20px;
-    text-align: center;
-    padding: 20px;
-    border-radius: 6px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-    background-color: #53571a;
-    border: 3px solid black;
+  margin: 30px 20px 30px 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 6px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  background-color: #53571a;
+  border: 3px solid black;
 }
 
 .dropdown:hover {
@@ -155,21 +154,21 @@ body {
 }
 
 .dropdown-content {
-    border-radius: 10px;
-    border: 3px solid black;
-    margin-top: 16px;
-    text-align: center;
-    display: none;
-    position: absolute;
-    color: #474747;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    z-index: 1;
+  border-radius: 10px;
+  border: 3px solid black;
+  margin-top: 16px;
+  text-align: center;
+  display: none;
+  position: absolute;
+  color: #474747;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 .dropdown-content p:hover {
@@ -184,11 +183,19 @@ body {
 }
 
 .about {
-  width:325px;
-  height:325px;
+  width: 325px;
+  height: 325px;
   float: right;
 }
+
 .aboutp {
   padding-top: 85px;
   margin-left: 81px;
+}
+
+.lookbook {
+  padding-top: 100px;
+  width: 325px;
+  height: 325px;
+  padding-left: 55px;
 }
