@@ -90,7 +90,7 @@ body {
 .active, .dot:hover {
   background-color: #717171;
 }
-*/
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 30.5s;
@@ -117,7 +117,7 @@ body {
     opacity: 1
   }
 }
-
+*/
 .responsiveCal {
   position: relative;
   padding-bottom: 55%;
@@ -200,3 +200,45 @@ body {
   height: 325px;
   padding-left: 55px;
 }
+
+div {
+    display: block;
+}
+
+.mySlides {
+    top: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+script {
+    display: none;
+}
+
+.EM-button {
+    color: white;
+    width: 20%;
+    height: 70px;
+}
+
+.EM-button {
+    background-color: #40E0D0;
+    color: #40E0D0;
+    border: none;
+    font-size: 25px;
+    padding: 20px;
+    margin: none;
+    display: inline;
+    text-align: center;
+    width: 205.6px;
+  }
+
+    .btn {
+      text-align: center;
+    }
+
+    div {
+      display: block;
+    }

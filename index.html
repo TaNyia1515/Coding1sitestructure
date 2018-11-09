@@ -29,10 +29,10 @@
     <a href="./Shop.html">Shop</a>
   </div>
 
-  <!-- Slideshow container -->
+  <!-- Slideshow container
   <div class="slideshow-container">
-
-    <!-- Full-width images with number and caption text -->
+-->
+    <!-- Full-width images with number and caption text
     <div class="mySlides fade">
       <div class="numbertext">1 / 6</div>
       <img src="./images/tiger.png" height="550" width:"100%">
@@ -81,6 +81,58 @@
       }
       slides[slideIndex - 1].style.display = "block";
       setTimeout(showSlides, 3750); // Change image every 3.75 seconds
+    }
+  </script>
+-->
+<div class="EMcontent EMdisplay-container">
+    <img class="mySlides" src="./images/tiger.png" style="height: 550px; width: 450px; display: none;">
+    <img class="mySlides" src="./images/bluedress.png" style="height: 550px; width: 450px; display: none;">
+    <img class="mySlides" src="./images/collage.png" style="height: 550px; width: 450px; display: none;">
+    <img class="mySlides" src="./images/danita2.png" style="height: 550px; width: 450px; display: none;">
+    <img class="mySlides" src="./images/curlers.png" style="height: 550px; width: 450px; display: none;">
+    <img class="mySlides" src="./images/collage2.png" style="height: 550px; width: 450px; display: none;">
+    <div class="btn">
+      <button class="EM-button EM-black EM-display-left" onclick="plusDivs(-1)"><</button>
+      <button class="EM-button EM-black EM-display-right" onclick="plusDivs(1)">></button>
+    </div>
+  </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3750); // Change image every 3.75 seconds
+    }
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = x.length
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
     }
   </script>
 </body>
