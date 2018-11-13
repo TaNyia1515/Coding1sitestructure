@@ -28,113 +28,80 @@
     </a>
     <a href="./Shop.html">Shop</a>
   </div>
+  <div class="EMcontent EMdisplay-container">
+   <img class="mySlides" src="./images/tiger.png" style="height: 550px; width: 450px; display: block;">
+   <img class="mySlides" src="./images/pinkwoman.png" style="height: 550px; width: 450px; display: block;">
+   <img class="mySlides" src="./images/danita2.png" style="height: 550px; width: 450px; display: block;">
+   <img class="mySlides" src="./images/anna.png" style="height: 550px; width: 450px; display: block;">
+   <img class="mySlides" src="./images/curlers.png" style="height: 550px; width: 450px; display: block;">
+   <img class="mySlides" src="./images/cigi.png" style="height: 550px; width: 450px; display: block;">
+   <img class="mySlides" src="./images/neighcollage.png" style="height: 550px; width: 450px; display: block;">
+   <img class="mySlides" src="./images/collage.png" style="height: 550px; width: 450px; display: block;">
+   <img class="mySlides" src="./images/bluedress.png" style="height: 550px; width: 450px; display: block;">
+   <img class="mySlides" src="./images/cheshacollage.png" style="height: 550px; width: 500px; display: block;">
+   <img class="mySlides" src="./images/mcclinton.png" style="height: 550px; width: 450px; display: block;">
+   <img class="mySlides" src="./images/blondefro.png" style="height: 550px; width: 450px; display: block;">
+   <img class="mySlides" src="./images/pinkhairafter.png" style="height: 550px; width: 450px; display: block;">
+   <img class="mySlides" src="./images/bluewoman.png" style="height: 550px; width: 450px; display: block;">
+   <img class="mySlides" src="./images/seniorpics.png" style="height: 550px; width: 450px; display: block;">
+   <img class="mySlides" src="./images/whiteshirts.png" style="height: 550px; width: 450px; display: block;">
+   <div class="btn">
+     <button class="EM-button EM-black EM-display-left" onclick="plusDivs(-1)">&#10094;</button>
+     <button class="EM-button EM-black EM-display-right" onclick="plusDivs(1)">&#10095;</button>
+   </div>
+ </div>
+ <script>
+   var slideIndex = 0;
+   showSlides();
 
-  <!-- Slideshow container
-  <div class="slideshow-container">
--->
-    <!-- Full-width images with number and caption text
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 6</div>
-      <img src="./images/tiger.png" height="550" width:"100%">
-    </div>
+   function showSlides() {
+     var i;
+     var slides = document.getElementsByClassName("mySlides");
+     for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+     }
+     slideIndex++;
+     if (slideIndex > slides.length) {
+       slideIndex = 1
+     }
+     slides[slideIndex - 1].style.display = "block";
+     setTimeout(showSlides, 3750); // Change image every 3.75 seconds
+   }
+   var slideIndex = 1;
+   showDivs(slideIndex);
 
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 6</div>
-      <img src="./images/bluedress.png" height="550" width="100%">
-    </div>
+   function plusDivs(n) {
+     showDivs(slideIndex += n);
+   }
 
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 6</div>
-      <img src="./images/collage.png" height="550" width:"100%">
-    </div>
+   function showDivs(n) {
+     var i;
+     var x = document.getElementsByClassName("mySlides");
+     if (n > x.length) {
+       slideIndex = 1
+     }
+     if (n < 1) {
+       slideIndex = x.length
+     }
+     for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+     }
+     x[slideIndex - 1].style.display = "block";
+   }
+ </script>
 
-    <div class="mySlides fade">
-      <div class="numbertext">4 / 6</div>
-      <img src="./images/danita2.png" height="550" width:"100%">
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">5 / 6</div>
-      <img src="./images/curlers.png" height="550" width:"100%">
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext">6 / 6</div>
-      <img src="./images/collage2.png" height="550" width:"100%">
-    </div>
-
-
-
-  <script>
-    var slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1
-      }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 3750); // Change image every 3.75 seconds
-    }
-  </script>
--->
-<div class="EMcontent EMdisplay-container">
-    <img class="mySlides" src="./images/tiger.png" style="height: 550px; width: 450px; display: none;">
-    <img class="mySlides" src="./images/bluedress.png" style="height: 550px; width: 450px; display: none;">
-    <img class="mySlides" src="./images/collage.png" style="height: 550px; width: 450px; display: none;">
-    <img class="mySlides" src="./images/danita2.png" style="height: 550px; width: 450px; display: none;">
-    <img class="mySlides" src="./images/curlers.png" style="height: 550px; width: 450px; display: none;">
-    <img class="mySlides" src="./images/collage2.png" style="height: 550px; width: 450px; display: none;">
-    <div class="btn">
-      <button class="EM-button EM-black EM-display-left" onclick="plusDivs(-1)"><</button>
-      <button class="EM-button EM-black EM-display-right" onclick="plusDivs(1)">></button>
-    </div>
+ <div class="wrapper clearfix">
+   <link itemprop="url" href="https://tanyia1515.github.io/Nefra/index.html">
+   <h3 class="text-regular"><span>Follow Us</span></h3>
+   <ul class="reset clearfix">
+    <li class="facebook"><a itemprop="sameAs" href="https://www.facebook.com/motivescosmetics" title="Facebook" rel="me">Facebook</a></li>
+    <li class="twitter"><a itemprop="sameAs" href="https://mobile.twitter.com/AlexKin40400324" title="Twitter" rel="me">Twitter</a></li>
+    <li class="youtube"><a itemprop="sameAs" href="https://www.youtube.com/user/officialmotives" title="YouTube" rel="me">YouTube</a></li>
+    <li class="instagram"><a itemprop="sameAs" href="https://www.instagram.com/kingdomapperance" title="Instagram" rel="me">Instagram</a></li>
+     </ul>
   </div>
-  <script>
-    var slideIndex = 0;
-    showSlides();
+ </div>
 
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1
-      }
-      slides[slideIndex - 1].style.display = "block";
-      setTimeout(showSlides, 3750); // Change image every 3.75 seconds
-    }
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) {
-        slideIndex = 1
-      }
-      if (n < 1) {
-        slideIndex = x.length
-      }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      x[slideIndex - 1].style.display = "block";
-    }
-  </script>
 </body>
 
 <footer>
