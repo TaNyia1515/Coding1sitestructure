@@ -1,3 +1,5 @@
+@media {
+
 body {
   background-color: white;
 }
@@ -14,7 +16,7 @@ body {
 
 .navbar {
   display: flex;
-  background-color: lightyellow;
+  background-color: #40E0D0;
   opacity: .75;
   overflow: hidden;
 }
@@ -403,24 +405,4 @@ a:hover {
  display: inline-block;
  margin: 0 auto;
 }
-.spa #footer .social nav ul{ /*spanish adjustment for wrapping*/
- width: 940px;
 }
-#footer .social li{
- margin: 0 .725em;
- display: inline-block;
-}
-#footer .social li a{
- color: #eee;
- font-size: 12px;
- text-decoration: none;
-}
-
-#footer .copyright{
- font-size: 14px;
- margin: 24px 0;
- text-align: center;
-}
-/*end of grey section of footer*/
-.spa #footer .motives ul:last-child{ /* adjustment for spanish */
- float: none;
