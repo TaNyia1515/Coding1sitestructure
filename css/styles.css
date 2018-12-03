@@ -188,12 +188,9 @@ body {
   width: 325px;
   height: 325px;
   float: right;
+  margin-top: 65px;
 }
 
-.aboutp {
-  padding-top: 85px;
-  margin-left: 81px;
-}
 
 .column {
   padding-top: 100px;
@@ -405,4 +402,13 @@ a:hover {
  display: inline-block;
  margin: 0 auto;
 }
+
+p {
+  padding-top: 55px;
+  font-size: 35px;
+  font-family: Arial,sans-serif;
+  font-style: oblique;
+  background-color:  pink;
+  margin-top: 75px;
+
 }
