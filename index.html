@@ -29,21 +29,21 @@
     <a href="./Shop.html">Shop</a>
   </div>
   <div class="NFRcontent NFRdisplay-container">
-   <img class="mySlides" src="./images/tiger.png" style="height: 550px; width: 450px; display: block;">
-   <img class="mySlides" src="./images/pinkwoman.png" style="height: 550px; width: 450px; display: block;">
-   <img class="mySlides" src="./images/danita2.png" style="height: 550px; width: 450px; display: block;">
-   <img class="mySlides" src="./images/anna.png" style="height: 550px; width: 450px; display: block;">
-   <img class="mySlides" src="./images/curlers.png" style="height: 550px; width: 450px; display: block;">
-   <img class="mySlides" src="./images/cigi.png" style="height: 550px; width: 450px; display: block;">
-   <img class="mySlides" src="./images/neighcollage.png" style="height: 550px; width: 450px; display: block;">
-   <img class="mySlides" src="./images/collage.png" style="height: 550px; width: 450px; display: block;">
-   <img class="mySlides" src="./images/bluedress.png" style="height: 550px; width: 450px; display: block;">
-   <img class="mySlides" src="./images/cheshacollage.png" style="height: 550px; width: 500px; display: block;">
-   <img class="mySlides" src="./images/mcclinton.png" style="height: 550px; width: 450px; display: block;">
-   <img class="mySlides" src="./images/blondefro.png" style="height: 550px; width: 450px; display: block;">
-   <img class="mySlides" src="./images/pinkhairafter.png" style="height: 550px; width: 450px; display: block;">
-   <img class="mySlides" src="./images/bluewoman.png" style="height: 550px; width: 450px; display: block;">
-   <img class="mySlides" src="./images/seniorpics.png" style="height: 550px; width: 450px; display: block;">
+   <img class="Slides" src="./images/tiger.png" style="height: 550px; width: 450px; display: block;">
+   <img class="Slides" src="./images/pinkwoman.png" style="height: 550px; width: 450px; display: block;">
+   <img class="Slides" src="./images/danita2.png" style="height: 550px; width: 450px; display: block;">
+   <img class="Slides" src="./images/anna.png" style="height: 550px; width: 450px; display: block;">
+   <img class="Slides" src="./images/curlers.png" style="height: 550px; width: 450px; display: block;">
+   <img class="Slides" src="./images/cigi.png" style="height: 550px; width: 450px; display: block;">
+   <img class="Slides" src="./images/neighcollage.png" style="height: 550px; width: 450px; display: block;">
+   <img class="Slides" src="./images/collage.png" style="height: 550px; width: 450px; display: block;">
+   <img class="Slides" src="./images/bluedress.png" style="height: 550px; width: 450px; display: block;">
+   <img class="Slides" src="./images/cheshacollage.png" style="height: 550px; width: 500px; display: block;">
+   <img class="Slides" src="./images/mcclinton.png" style="height: 550px; width: 450px; display: block;">
+   <img class="Slides" src="./images/blondefro.png" style="height: 550px; width: 450px; display: block;">
+   <img class="Slides" src="./images/pinkhairafter.png" style="height: 550px; width: 450px; display: block;">
+   <img class="Slides" src="./images/bluewoman.png" style="height: 550px; width: 450px; display: block;">
+   <img class="Slides" src="./images/seniorpics.png" style="height: 550px; width: 450px; display: block;">
    <div class="btn">
      <button class="NFR-button NFR-black NFR-display-left" onclick="plusDivs(-1)">&#10094;</button>
      <button class="NFR-button NFR-black NFR-display-right" onclick="plusDivs(1)">&#10095;</button>
@@ -55,7 +55,7 @@
 
    function showSlides() {
      var i;
-     var slides = document.getElementsByClassName("mySlides");
+     var slides = document.getElementsByClassName("Slides");
      for (i = 0; i < slides.length; i++) {
        slides[i].style.display = "none";
      }
@@ -75,7 +75,7 @@
 
    function showDivs(n) {
      var i;
-     var x = document.getElementsByClassName("mySlides");
+     var x = document.getElementsByClassName("Slides");
      if (n > x.length) {
        slideIndex = 1
      }
@@ -89,18 +89,22 @@
    }
  </script>
  <div class="container">
- <div class="wrapper clearfix">
-   <link itemprop="url" href="https://tanyia1515.github.io/Nefra/index.html">
-   <h3 class="text-regular"><span>Follow Us</span></h3>
-   <ul class="reset clearfix">
-    <li class="facebook"><a itemprop="sameAs" href="https://www.facebook.com/motivescosmetics" title="Facebook" rel="me">Facebook</a></li>
-    <li class="twitter"><a itemprop="sameAs" href="https://mobile.twitter.com/AlexKin40400324" title="Twitter" rel="me">Twitter</a></li>
-    <li class="youtube"><a itemprop="sameAs" href="https://www.youtube.com/user/officialmotives" title="YouTube" rel="me">YouTube</a></li>
-    <li class="instagram"><a itemprop="sameAs" href="https://www.instagram.com/kingdomapperance" title="Instagram" rel="me">Instagram</a></li>
-     </ul>
-  </div>
- </div>
+   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
 
+         <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+         <div class="top">
+           <dd class="social">Follow Our Social Media</dd>
+             <a href="https://www.facebook.com/motivescosmetics%22">
+         <img src="./images/facebook.jpg" style="width: 10%;">
+             </a>
+             <a href="https://mobile.twitter.com/AlexKin40400324%22">
+           <img src="./images/twitter.jpg" style="width: 10%;">
+             </a>
+             <a href="https://www.instagram.com/kingdomapperance%22">
+           <img src="./images/instagram.png" style="width: 10%;">
+             </a>
+ </div>
+</div>
 </body>
 
 <footer>
